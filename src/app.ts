@@ -39,3 +39,5 @@ app.use((err: Error & { code?: string }, _req: Request, res: Response, _next: Ne
   console.error(err);
   return res.status(500).json({ erro: 'erro interno' });
 });
+
+export default app;
